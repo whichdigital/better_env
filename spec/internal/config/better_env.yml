@@ -1,0 +1,15 @@
+common: &common
+  COMMON_CONFIG:
+    type: url
+
+test:
+  <<: *common
+  TIMEOUT:
+    type: minutes
+    default: 10
+
+development:
+  <<: *common
+  NOT_LOADED:
+    type: boolean
+    default: true
