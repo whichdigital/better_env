@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'better_env/rails/value'
 
 module BetterEnv
@@ -29,13 +30,11 @@ module BetterEnv
       end
 
       def watch
-        begin
-          require 'spring/watcher'
-        rescue LoadError
-          BetterEnv.logger.debug('Spring is not present')
-        else
-          Spring.watch([config_file] + env)
-        end
+        require 'spring/watcher'
+      rescue LoadError
+        BetterEnv.logger.debug('Spring is not present')
+      else
+        Spring.watch([config_file] + env)
       end
 
       def self.load

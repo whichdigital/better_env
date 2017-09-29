@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'rails_helper'
 
 describe BetterEnv::Rails::Railtie do
@@ -7,7 +8,7 @@ describe BetterEnv::Rails::Railtie do
   end
 
   it 'has only the configuration for current Rails environment' do
-    expect(BetterEnv.configuration.configuration.keys).to eq %w(COMMON_CONFIG TIMEOUT)
+    expect(BetterEnv.configuration.configuration.keys).to eq %w[COMMON_CONFIG TIMEOUT]
   end
 
   it 'casts :minutes type to ActiveSupport::Duration' do

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module BetterEnv
   class Configuration
     attr_reader :configuration

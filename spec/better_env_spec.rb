@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'spec_helper'
 
 describe BetterEnv do
@@ -19,7 +20,7 @@ describe BetterEnv do
   end
 
   def load_subject
-    described_class.load options, env_files.map { |file| file.keys.first }
+    described_class.load(options, env_files.map { |file| file.keys.first })
   end
 
   before do |example|
@@ -262,7 +263,7 @@ describe BetterEnv do
       end
 
       it 'returns a ruby integer type' do
-        expect(BetterEnv[:INTEGER]).to be_an(Fixnum)
+        expect(BetterEnv[:INTEGER]).to be_an(Integer)
       end
     end
 
@@ -275,7 +276,7 @@ describe BetterEnv do
       end
 
       it 'returns a ruby time object' do
-        expect(BetterEnv[:TIME]).to be_an(Fixnum)
+        expect(BetterEnv[:TIME]).to be_an(Integer)
         expect(BetterEnv[:TIME]).to eq 10 * 60
       end
     end
