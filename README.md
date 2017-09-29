@@ -1,7 +1,12 @@
 # About
 
-Better Environment (better_env) makes configuring your application easier. It imports environment configuration, parses `.env` files similar to the `dotenv` gem and adds extra configurability for each variable through the `config/better_env.yml` file.
-Using the gem you can be sure that your application is started with all configuration necessary, and all the values are formatted for you under ```BetterEnv[:SOME_VARIABLE_NAME]```.
+Better Environment (better_env) makes configuring your application easier.
+- it takes the whiny approach when a configuration is missing and raises an exception
+- transforms configuration values to the specified format
+- prints a warning message if there's forgotten and obsolete configuration, so you can clean it up
+
+All this is done through parsing `.env` files similar to the `dotenv` gem, but adds extra configurability for each variable through the `config/better_env.yml` file.
+Using the gem you can be sure that your application is started with all configuration necessary, and all the values are formatted correctly under ```BetterEnv[:VARIABLE_NAME]```.
 
 ## Installation
 
