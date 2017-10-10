@@ -1,3 +1,5 @@
+[![CircleCI](https://circleci.com/gh/whichdigital/better_env/tree/master.svg?style=shield)](https://circleci.com/gh/whichdigital/better_env/tree/master)
+
 # About
 
 Better Environment (better_env) makes configuring your application easier.
