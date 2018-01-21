@@ -1,0 +1,9 @@
+test:
+  pre:
+    - bundle exec appraisal install
+  override:
+    - bundle exec rspec
+    - bundle exec appraisal rspec
+  post:
+    - bundle exec rubocop
+    - bundle exec fasterer

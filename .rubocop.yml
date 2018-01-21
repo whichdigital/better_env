@@ -2,10 +2,15 @@ AllCops:
   TargetRubyVersion: 2.3
   Exclude:
   - bin/**/*
+  - vendor/**/*
   - Gemfile
 
 Metrics/LineLength:
   Max: 140
+
+Metrics/BlockLength:
+  Exclude:
+    - 'spec/**/*.rb'
 
 Documentation:
   Enabled: false

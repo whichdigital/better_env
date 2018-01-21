@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 require 'better_env/version'
 require 'better_env/value'
 require 'better_env/configuration'

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module BetterEnv
   module Rails
     class Value < BetterEnv::Value

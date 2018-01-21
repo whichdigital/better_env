@@ -1,7 +1,7 @@
 PATH
   remote: ../
   specs:
-    better_env (2.2.0)
+    better_env (1.0.0)
 
 GEM
   remote: https://rubygems.org/

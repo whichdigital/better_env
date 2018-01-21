@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 module BetterEnv
   class Value
     attr_reader :name, :value, :type, :default, :required
